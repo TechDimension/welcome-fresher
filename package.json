@@ -1,0 +1,21 @@
+{
+  "name": "welcome-fresher",
+  "version": "1.0.0",
+  "description": "Welcome signup for freshers fair",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.16.3",
+    "hbs": "^4.0.1",
+    "lodash": "^4.15.0",
+    "mongodb": "^2.2.5",
+    "mongoose": "^4.5.9",
+    "validator": "^5.6.0"
+  }
+}
