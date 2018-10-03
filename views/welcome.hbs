@@ -4,17 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Welcome</title>
-  <style type="text/css" src="./css/style.css"></style>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
-  <main>
-    <h1> Sign up to UKC Surf</h1>
-    <form action="/" method="POST">
-      <input type="text" placeholder="username@kent.ac.uk" id="email" name="email">
-      <input type="submit" value="Submit">
-    </form>
-  </main>
+
+  <div class="main">
+
+    <div class="main--container">
+      <h1> Sign up to UKC Surf</h1>
+      <div class="email-form">
+        <form action="/" method="POST">
+          <input type="email" placeholder="username@kent.ac.uk" id="email" name="email" class="email-field">
+          <input type="submit" value="Submit" class="btn">
+        </form>
+      </div>
+    </div>
+
+  </div>
 
 
 </body>

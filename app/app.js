@@ -19,12 +19,19 @@ hbs.registerPartials(__dirname + "/views/partials");
 
 app.set("view engine", "hbs");
 
-app.use(express.static(__dirname + "/public"));
-
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+console.log(__dirname + "/public");
+app.use(express.static(__dirname + "/public"));
+
+app.use("/", (req, res, next) => {
+  console.log(req.url);
+  next();
+});
+
 app.get("/", (req, res) => {
+  // console.log("The current working directory is " + process.cwd());
   res.render("welcome.hbs");
 });
 
